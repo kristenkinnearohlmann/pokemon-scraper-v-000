@@ -29,7 +29,7 @@ class Pokemon
     SQL
 
     db.execute(sql, id).map do |row|
-      
+
     end.first
   end
 
