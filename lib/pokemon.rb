@@ -33,7 +33,7 @@ class Pokemon
     SQL
 
     db.execute(sql, id).map do |row|
-
+      self.create_from_db(row)
     end.first
   end
 
