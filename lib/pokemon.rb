@@ -22,7 +22,7 @@ class Pokemon
   end
 
   def self.create_from_db(row)
-    pokemon = Pokemon.new(row[1],row[2],@db,row[0])
+    pokemon = Pokemon.new(name: row[1],type: row[2],db: @db,id: row[0])
   end
 
   def self.find(id, db)
